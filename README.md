@@ -1,74 +1,48 @@
-Features
+# **Telegram Bot for Background Removal** 🖼️🚀
 
-Accepts images from users via Telegram.
+This project includes a **Telegram bot** that removes the background from uploaded images using **rembg**.
 
-Removes the background from the image.
+## **Features**  
+✅ Removes background from images  
+✅ Supports Telegram image uploads  
+✅ Sends back processed images  
 
-Returns the processed image back to the user.
+## **Technologies Used**  
+- **Python** 🐍  
+- **Aiogram** 🤖  
+- **rembg** 🎭  
+- **Pillow** 🖼️  
+- **Requests** 🌐  
 
-Requirements
+## **Installation**  
+To run this bot, install the required dependencies:  
+```bash  
+pip install aiogram rembg pillow requests  
+```  
 
-Python 3.8+
+## **How to Run the Bot**  
+1️⃣ Clone the repository:  
+```bash  
+git clone https://github.com/your-username/background-removal-bot.git  
+cd background-removal-bot  
+```  
 
-Telegram Bot Token
+2️⃣ Set up your **Telegram Bot Token** in the script.  
+3️⃣ Run the bot using:  
+```bash  
+python bot.py  
+```  
 
-The following Python libraries:
+## **Usage**  
+- Start the bot with the **/start** command.  
+- Upload an image, and the bot will remove its background.  
+- The bot sends back the processed image without a background.  
 
-aiogram
+## **Contributing**  
+Feel free to fork this repository and submit pull requests with improvements.  
 
-rembg
+## **License**  
+This project is licensed under the MIT License.  
 
-Pillow
+🚀 **Background Removal Bot** – simple and effective image processing!
 
-requests
-
-Installation
-
-Clone this repository:
-
-git clone https://github.com/yourusername/telegram-bg-remover-bot.git
-cd telegram-bg-remover-bot
-
-Install required dependencies:
-
-pip install aiogram rembg pillow requests
-
-Set up your bot token:
-
-Get your bot token from BotFather.
-
-Replace TOKEN = "bot tokeni" in bot.py with your actual bot token.
-
-Usage
-
-Run the bot using the following command:
-
-python bot.py
-
-After starting the bot, send an image via Telegram. The bot will process the image and return the background-removed version.
-
-Bot Code Explanation
-
-The bot is structured as follows:
-
-The bot uses aiogram for handling messages and commands.
-
-When a user sends an image, the bot:
-
-Retrieves the file from Telegram servers.
-
-Downloads the file.
-
-Processes the image using rembg to remove the background.
-
-Sends the processed image back to the user.
-
-Notes
-
-The bot may take a few seconds to process high-resolution images.
-
-Ensure that your bot has permission to receive and send images in Telegram.
-
-License
-
-This project is licensed under the MIT License.
